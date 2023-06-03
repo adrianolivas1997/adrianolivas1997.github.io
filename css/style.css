@@ -1,0 +1,135 @@
+/* Custom CSS for Rafael's Salsa website */
+
+/* Adjust the height and styling of the hero section */
+.hero {
+  min-height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #fffbfb; /* Add this line to set the background color of the hero section */
+}
+
+/* Style the navigation bar */
+.navbar {
+  background-image: url("../images/banner.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Style the navigation links */
+.navbar-nav .nav-link {
+  font-size: 14px;
+  color: white;
+}
+
+/* Style the navbar brand */
+.navbar-brand {
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Style the carousel indicators */
+.carousel-indicators li {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  width: 10px;
+  height: 10px;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  height: auto;
+  max-height: 600px;
+  width: 100%; /* Add this line to ensure the image width is always 100% */
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  color: white;
+}
+
+.carousel-caption h3,
+.carousel-caption p {
+  margin: 0;
+}
+
+/* Style the active carousel indicator */
+.carousel-indicators li.active {
+  background-color: white;
+}
+
+/* Remove bullet points from unordered lists */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* Adjust form styling */
+form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.form-label {
+  font-weight: bold;
+}
+
+.form-control {
+  margin-bottom: 10px;
+}
+
+.btn-primary {
+  margin-top: 10px;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.video-container iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Center the Contact Us section and add space */
+#contact {
+  text-align: center;
+  margin-top: 40px;
+}
+
+body.contact-page {
+  background-image: url("../images/form3.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Adjust body and HTML height for proper mobile viewport */
+body,
+html {
+  height: 100%;
+}
+
+/* Adjust the section height to be responsive */
+.section {
+  height: 100%;
+  min-height: 100vh;
+}
+
+/* Adjust font-size for proper scaling on iPhone devices */
+@media screen and (max-width: 414px) {
+  /* Adjust the max-width value as needed */
+  .hero h1,
+  .hero h2,
+  .hero p {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    word-wrap: break-word;
+  }
+}
